@@ -18,7 +18,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   metadataBase: new URL('https://repuestosvalentino.maat.work'),
   title: 'Valentino Repuestos | Autopartes, Baterías, Frenos, Embragues - Fernández Oro, Cipolletti, Neuquén',
-  description: 'Valentino Repuestos - Tu casa de repuestos de confianza en el Alto Valle. Baterías, frenos, embragues, lubricantes, rodamientos. Retiro en local gratis. Envío mismo día a Cipolletti y Neuquén. WhatsApp: 299 471-9426',
+  description: 'Valentino Repuestos en General Fernández Oro. Repuestos del automotor: baterías, frenos, embragues, lubricantes, rodamientos, rulemanes y retenes. WhatsApp: 299 471-9426.',
   keywords: ['autopartes', 'repuestos', 'baterías', 'frenos', 'embragues', 'lubricantes', 'rodamientos', 'Fernández Oro', 'Cipolletti', 'Neuquén', 'Alto Valle'],
   authors: [{ name: 'Valentino Repuestos' }],
   creator: 'Valentino Repuestos',
@@ -28,8 +28,8 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'es_AR',
     url: 'https://repuestosvalentino.maat.work',
-    title: 'Valentino Repuestos | Autopartes y Repuestos en Alto Valle',
-    description: 'Tu casa de repuestos de confianza. Baterías, frenos, embragues, lubricantes. Retiro gratis en local. Envío mismo día.',
+    title: 'Valentino Repuestos | Repuestos del automotor en Fernández Oro',
+    description: 'Baterías, frenos, embragues, lubricantes, rodamientos, rulemanes y retenes. Consultas por WhatsApp.',
     siteName: 'Valentino Repuestos',
     images: [
       {
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Valentino Repuestos',
-    description: 'Autopartes, baterías, frenos, embragues en Fernández Oro, Cipolletti, Neuquén',
+    description: 'Repuestos del automotor en Fernández Oro. Consultas por WhatsApp.',
     images: ['/og-image.jpg'],
   },
   verification: {
