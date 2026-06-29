@@ -1,0 +1,7 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#F3F4F6"/>
+  <path d="M200 60 L280 100 L280 200 L200 240 L120 200 L120 100 Z" stroke="#9CA3AF" stroke-width="2" fill="none"/>
+  <path d="M200 80 L200 220" stroke="#9CA3AF" stroke-width="2" stroke-dasharray="5,5"/>
+  <path d="M120 150 L280 150" stroke="#9CA3AF" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="200" y="250" font-family="system-ui" font-size="14" fill="#9CA3AF" text-anchor="middle">Filtro WIX Honda Civic</text>
+</svg>
