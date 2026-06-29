@@ -31,6 +31,9 @@ Archivos principales para imprimir:
 8. 08-mensaje-whatsapp-previo.html / .pdf
    Texto para mandar antes o después de pasar.
 
+9. 09-fuentes-y-preguntas.html / .pdf
+   Fuentes públicas consultadas y preguntas críticas para no mezclar datos. Uso interno Gio.
+
 Orden recomendado para llevar impreso:
 - 02-onepager-cliente.pdf: 2 copias.
 - 04-hoja-relevamiento.pdf: 2 copias.
