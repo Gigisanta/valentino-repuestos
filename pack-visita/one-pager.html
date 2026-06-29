@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Propuesta para Valentino Repuestos</title>
+  <style>
+    @page { size: A4; margin: 14mm; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Inter, Arial, sans-serif; color: #18181b; background: #f6efe3; line-height: 1.45; }
+    .page { width: 210mm; min-height: 297mm; margin: 0 auto; background: #fffaf2; padding: 16mm; }
+    header { display: flex; justify-content: space-between; gap: 24px; border-bottom: 4px solid #c41e3a; padding-bottom: 18px; }
+    .brand { display: flex; gap: 14px; align-items: center; }
+    .logo { width: 56px; height: 56px; border-radius: 18px; background: #c41e3a; color: white; display: grid; place-items: center; font-weight: 900; font-size: 22px; }
+    h1 { margin: 0; font-size: 34px; letter-spacing: -1.4px; line-height: 1.02; }
+    h2 { margin: 28px 0 10px; font-size: 22px; letter-spacing: -.4px; }
+    h3 { margin: 0 0 6px; font-size: 15px; }
+    p { margin: 0; }
+    .muted { color: #52525b; }
+    .pill { display: inline-block; padding: 7px 10px; border-radius: 999px; background: #fee2e2; color: #991b1b; font-weight: 800; font-size: 12px; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .card { background: white; border: 1px solid #e7e5e4; border-radius: 18px; padding: 16px; box-shadow: 0 8px 20px rgba(24,24,27,.06); }
+    .dark { background: #18181b; color: white; }
+    .red { background: #c41e3a; color: white; }
+    ul { margin: 10px 0 0; padding-left: 18px; }
+    li { margin: 7px 0; }
+    .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+    .num { width: 34px; height: 34px; border-radius: 12px; background: #c41e3a; color: white; display: grid; place-items: center; font-weight: 900; margin-bottom: 10px; }
+    .price { font-size: 30px; font-weight: 900; letter-spacing: -1px; }
+    footer { margin-top: 22px; padding-top: 14px; border-top: 1px solid #e7e5e4; display: flex; justify-content: space-between; font-size: 12px; color: #52525b; }
+    @media print { body { background: white; } .page { margin: 0; box-shadow: none; } }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <div class="brand">
+        <div class="logo">VR</div>
+        <div>
+          <h1>Una página simple para que Valentino venda más consultas por WhatsApp.</h1>
+          <p class="muted">Propuesta de MaatWork para Valentino Repuestos · Mariano Moreno 354</p>
+        </div>
+      </div>
+      <div><span class="pill">Demo lista para ver hoy</span></div>
+    </header>
+
+    <section class="grid">
+      <div>
+        <h2>Qué vimos</h2>
+        <div class="card">
+          <ul>
+            <li>Valentino ya tiene movimiento en Instagram, pero no tiene una landing clara para convertir visitas en consultas.</li>
+            <li>La gente busca rápido: batería, frenos, embrague, aceite, rulemán, filtro.</li>
+            <li>El canal natural es WhatsApp, pero conviene ordenar el pedido antes de que llegue el mensaje.</li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <h2>Qué proponemos</h2>
+        <div class="card red">
+          <h3>Landing + catálogo simple</h3>
+          <p>Una página moderna, mobile-first, con rubros, búsqueda, botones de WhatsApp y mensajes ya armados para consultar stock.</p>
+        </div>
+      </div>
+    </section>
+
+    <h2>Cómo le ayuda al local</h2>
+    <section class="grid">
+      <div class="card"><h3>Menos consultas desordenadas</h3><p>El cliente manda modelo, año y pieza. Menos audios largos y menos ida y vuelta.</p></div>
+      <div class="card"><h3>Más confianza antes de visitar</h3><p>Dirección, rubros, WhatsApp, mapa e Instagram ordenados en un solo lugar.</p></div>
+      <div class="card"><h3>Mejor para talleres</h3><p>Permite pedir varias cosas con lista y urgencia, sin perder información.</p></div>
+      <div class="card"><h3>Cero costo inicial de herramientas</h3><p>Arrancamos con Vercel/GitHub/WhatsApp. Sin pagar software extra al principio.</p></div>
+    </section>
+
+    <h2>Plan de arranque</h2>
+    <section class="steps">
+      <div class="card"><div class="num">1</div><h3>Semana 1</h3><p>Publicar landing, WhatsApp, ubicación, catálogo inicial y métricas básicas.</p></div>
+      <div class="card"><div class="num">2</div><h3>Semana 2</h3><p>Cargar rubros reales, fotos, productos frecuentes y respuestas rápidas.</p></div>
+      <div class="card"><div class="num">3</div><h3>Mes 1</h3><p>Medir consultas, ordenar pedidos recurrentes y sumar mejoras según uso real.</p></div>
+    </section>
+
+    <section class="grid">
+      <div>
+        <h2>Inversión sugerida</h2>
+        <div class="card dark">
+          <p class="price">Setup + mensual</p>
+          <p>Modelo recomendado: implementación inicial accesible + mantenimiento mensual para cambios, catálogo, soporte y mejoras.</p>
+        </div>
+      </div>
+      <div>
+        <h2>Próximo paso</h2>
+        <div class="card">
+          <p><strong>Ver la demo 10 minutos.</strong></p>
+          <p class="muted">Si le sirve, definimos rubros reales, fotos, número final de WhatsApp y forma de trabajo.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <span>MaatWork · Giolivo Garcia</span>
+      <span>Demo: valentino-repuestos.vercel.app</span>
+    </footer>
+  </main>
+</body>
+</html>

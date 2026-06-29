@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Checklist - Valentino Repuestos</title>
+  <style>
+    @page { size:A4; margin:14mm; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Inter, Arial, sans-serif; color:#18181b; background:#f6efe3; line-height:1.45; }
+    main { width:210mm; min-height:297mm; margin:0 auto; background:#fffaf2; padding:16mm; }
+    h1 { margin:0; font-size:34px; letter-spacing:-1px; line-height:1.05; }
+    h2 { margin:24px 0 10px; font-size:20px; color:#c41e3a; }
+    p { color:#52525b; margin:8px 0 0; }
+    header { border-bottom:4px solid #c41e3a; padding-bottom:18px; }
+    .list { display:grid; gap:10px; margin-top:12px; }
+    label { display:flex; gap:12px; align-items:flex-start; background:white; border:1px solid #e7e5e4; border-radius:16px; padding:13px; }
+    input { width:20px; height:20px; margin-top:2px; }
+    strong { display:block; color:#18181b; }
+    span { color:#52525b; }
+    .note { background:#18181b; color:white; border-radius:18px; padding:16px; margin-top:20px; }
+    .note p { color:#e4e4e7; }
+    @media print { body { background:white; } main { margin:0; } }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Qué necesitamos de Valentino para dejar la página lista.</h1>
+    <p>Checklist simple para no frenar la publicación ni inventar información.</p>
+  </header>
+
+  <h2>Datos básicos</h2>
+  <div class="list">
+    <label><input type="checkbox"><span><strong>WhatsApp principal</strong>Número que quieren recibir consultas de stock.</span></label>
+    <label><input type="checkbox"><span><strong>Horarios reales</strong>Días y horarios de atención del local.</span></label>
+    <label><input type="checkbox"><span><strong>Dirección confirmada</strong>Mariano Moreno 354 u otra dirección exacta para Maps.</span></label>
+    <label><input type="checkbox"><span><strong>Instagram/Facebook oficiales</strong>Links correctos para poner en la web.</span></label>
+  </div>
+
+  <h2>Catálogo inicial</h2>
+  <div class="list">
+    <label><input type="checkbox"><span><strong>Rubros principales</strong>Baterías, frenos, embragues, lubricantes, rodamientos, filtros u otros.</span></label>
+    <label><input type="checkbox"><span><strong>20 productos frecuentes</strong>Los que más preguntan o más margen tienen.</span></label>
+    <label><input type="checkbox"><span><strong>Marcas que trabajan</strong>Ej: Moura, WIX, SKF, Mobil, Bosch, etc.</span></label>
+    <label><input type="checkbox"><span><strong>Fotos reales</strong>Frente del local, mostrador, góndolas, productos y equipo.</span></label>
+  </div>
+
+  <h2>Forma de atención</h2>
+  <div class="list">
+    <label><input type="checkbox"><span><strong>Retiro / envío</strong>Confirmar si hacen envíos locales o solo retiro.</span></label>
+    <label><input type="checkbox"><span><strong>Pedidos para talleres</strong>Si quieren una vía especial o simplemente WhatsApp con lista.</span></label>
+    <label><input type="checkbox"><span><strong>Pagos</strong>Efectivo, transferencia, tarjeta, mercado pago, etc.</span></label>
+    <label><input type="checkbox"><span><strong>Qué NO prometer</strong>Garantías, envíos, stock o precios que no quieran publicar.</span></label>
+  </div>
+
+  <div class="note">
+    <strong>Regla simple:</strong>
+    <p>Publicamos primero lo mínimo que trae consultas. Después medimos qué pregunta la gente y cargamos más catálogo.</p>
+  </div>
+</main>
+</body>
+</html>
