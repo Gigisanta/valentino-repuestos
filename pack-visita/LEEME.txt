@@ -1,3 +1,4 @@
 Pack listo para Valentino Repuestos
 Demo: https://valentino-repuestos.vercel.app
 Abrir/imprimir los HTML desde esta carpeta.
+INVESTIGACION_SUBAGENTES.md resume los hallazgos de diseño, catálogo, copy, animaciones y competencia.
