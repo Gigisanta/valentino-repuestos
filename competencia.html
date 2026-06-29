@@ -1,235 +1,64 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Competencia - Valentino Repuestos</title>
-    <style>
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            margin: 0;
-            padding: 20px;
-            background-color: #f9f9f9;
-        }
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            background: white;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        .header {
-            text-align: center;
-            border-bottom: 3px solid #C41E3A;
-            padding-bottom: 20px;
-            margin-bottom: 30px;
-        }
-        .header h1 {
-            color: #C41E3A;
-            margin: 0;
-            font-size: 24px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-            font-size: 14px;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 12px;
-            text-align: left;
-            vertical-align: middle;
-        }
-        th {
-            background-color: #C41E3A;
-            color: white;
-            font-weight: 600;
-        }
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
-        .status-yes {
-            color: #28a745;
-            font-weight: bold;
-        }
-        .status-no {
-            color: #dc3545;
-            font-weight: bold;
-        }
-        .highlight-row {
-            background-color: #fff3cd !important;
-        }
-        .footer {
-            text-align: center;
-            margin-top: 30px;
-            padding-top: 20px;
-            border-top: 1px solid #eee;
-            color: #666;
-            font-size: 14px;
-        }
-        @media print {
-            body { background-color: white; }
-            .container { box-shadow: none; }
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Comparativa digital - Valentino Repuestos</title>
+  <style>
+    @page { size: A4 landscape; margin: 12mm; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: Inter, Arial, sans-serif; color:#18181b; background:#f6efe3; }
+    main { width:297mm; min-height:210mm; margin:0 auto; background:#fffaf2; padding:14mm; }
+    header { display:flex; justify-content:space-between; align-items:flex-start; gap:20px; border-bottom:4px solid #c41e3a; padding-bottom:14px; }
+    h1 { margin:0; font-size:30px; letter-spacing:-1px; }
+    p { margin:4px 0 0; color:#52525b; }
+    table { width:100%; border-collapse:separate; border-spacing:0; margin-top:18px; font-size:13px; overflow:hidden; border-radius:16px; border:1px solid #e7e5e4; background:white; }
+    th { background:#18181b; color:white; text-align:left; padding:11px; }
+    td { padding:11px; border-top:1px solid #e7e5e4; vertical-align:top; }
+    tr.highlight td { background:#fff1f2; font-weight:700; }
+    .yes { color:#15803d; font-weight:900; }
+    .no { color:#b91c1c; font-weight:900; }
+    .maybe { color:#a16207; font-weight:900; }
+    .cardgrid { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin-top:16px; }
+    .card { background:white; border:1px solid #e7e5e4; border-radius:16px; padding:14px; }
+    .card h3 { margin:0 0 7px; font-size:15px; }
+    .card p { font-size:12px; line-height:1.4; }
+    .tag { display:inline-block; padding:6px 9px; border-radius:999px; background:#fee2e2; color:#991b1b; font-weight:900; font-size:12px; }
+    footer { margin-top:14px; font-size:11px; color:#71717a; }
+    @media print { body { background:white; } main { margin:0; } }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>ANÁLISIS COMPETITIVO - CASAS DE REPUESTOS EN ALTO VALLE</h1>
-            <p>Comparación de Valentino Repuestos vs competencia local</p>
-        </div>
-        
-        <table>
-            <thead>
-                <tr>
-                    <th>Característica</th>
-                    <th>Valentino (Actual)</th>
-                    <th>Valentino (Propuesta)</th>
-                    <th>IntegralCar</th>
-                    <th>Urban Repuestos</th>
-                    <th>Allende Repuestos</th>
-                    <th>Repuestos Cipolletti</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Dirección física</td>
-                    <td>Mariano Moreno 354, Fernández Oro</td>
-                    <td>Igual</td>
-                    <td>Gral. Fernández Oro 838, Cipolletti</td>
-                    <td>General Roca 886, Cipolletti</td>
-                    <td>25 de Mayo 373, Cipolletti</td>
-                    <td>General Roca 886, Cipolletti</td>
-                </tr>
-                <tr>
-                    <td>Teléfono de contacto</td>
-                    <td>(0299) 154719426 / 2994719426</td>
-                    <td>Igual</td>
-                    <td>(0299) 477-6759</td>
-                    <td>(0299) 606-9919</td>
-                    <td>(0299) 478-1525</td>
-                    <td>(0299) 477-0452</td>
-                </tr>
-                <tr>
-                    <td>WhatsApp Business</td>
-                    <td><span class="status-yes">Sí (activo)</span></td>
-                    <td>Sí (mejorado)</td>
-                    <td><span class="status-yes">Sí</span></td>
-                    <td><span class="status-yes">Sí</span></td>
-                    <td><span class="status-yes">Sí</span></td>
-                    <td><span class="status-yes">Sí</span></td>
-                </tr>
-                <tr class="highlight-row">
-                    <td>Sitio web propio</td>
-                    <td><span class="status-no">No</span></td>
-                    <td><span class="status-yes">Sí</span></td>
-                    <td><span class="status-yes">integralcar.com.ar</span></td>
-                    <td><span class="status-yes">repuestosurban.com.ar</span></td>
-                    <td><span class="status-yes">allenderepuestos.com.ar</span></td>
-                    <td><span class="status-yes">repuestoscipolletti.com.ar</span></td>
-                </tr>
-                <tr>
-                    <td>Catálogo online buscable</td>
-                    <td><span class="status-no">No</span></td>
-                    <td><span class="status-yes">Sí</span></td>
-                    <td><span class="status-yes">Sí</span></td>
-                    <td><span class="status-yes">Sí</span></td>
-                    <td><span class="status-yes">Sí</span></td>
-                    <td><span class="status-yes">Sí</span></td>
-                </tr>
-                <tr>
-                    <td>Carrito de compras</td>
-                    <td><span class="status-no">No</span></td>
-                    <td><span class="status-yes">Sí</span></td>
-                    <td><span class="status-yes">Sí</span></td>
-                    <td><span class="status-no">No</span></td>
-                    <td><span class="status-no">No</span></td>
-                    <td><span class="status-no">No</span></td>
-                </tr>
-                <tr>
-                    <td>Pago online (tarjeta/transferencia)</td>
-                    <td><span class="status-no">No</span></td>
-                    <td><span class="status-yes">Sí (MercadoPago)</span></td>
-                    <td><span class="status-yes">Sí</span></td>
-                    <td><span class="status-no">No</span></td>
-                    <td><span class="status-no">No</span></td>
-                    <td><span class="status-no">No</span></td>
-                </tr>
-                <tr>
-                    <td>WhatsApp por producto (pre-cargado)</td>
-                    <td><span class="status-no">No</span></td>
-                    <td><span class="status-yes">Sí</span></td>
-                    <td><span class="status-no">No</span></td>
-                    <td><span class="status-no">No</span></td>
-                    <td><span class="status-no">No</span></td>
-                    <td><span class="status-no">No</span></td>
-                </tr>
-                <tr>
-                    <td>Retiro gratis en local</td>
-                    <td><span class="status-yes">Sí (implícito)</span></td>
-                    <td><span class="status-yes">Sí (garantizado)</span></td>
-                    <td><span class="status-yes">Sí</span></td>
-                    <td><span class="status-yes">Sí</span></td>
-                    <td><span class="status-yes">Sí</span></td>
-                    <td><span class="status-yes">Sí</span></td>
-                </tr>
-                <tr>
-                    <td>Envío mismo día (Alto Valle)</td>
-                    <td><span class="status-no">No</span></td>
-                    <td><span class="status-yes">Sí (Cipolletti/Neuquén)</span></td>
-                    <td><span class="status-yes">Sí (limitado)</span></td>
-                    <td><span class="status-yes">Sí (consultar)</span></td>
-                    <td><span class="status-yes">Sí (consultar)</span></td>
-                    <td><span class="status-no">No especificado</span></td>
-                </tr>
-                <tr>
-                    <td>Precios especiales para talleres</td>
-                    <td><span class="status-no">No especificado</span></td>
-                    <td><span class="status-yes">Sí (sección privada)</span></td>
-                    <td><span class="status-no">No especificado</span></td>
-                    <td><span class="status-no">No especificado</span></td>
-                    <td><span class="status-yes">Sí (implícito por especialización)</span></td>
-                    <td><span class="status-no">No especificado</span></td>
-                </tr>
-                <tr>
-                    <td>Reseñas Google (cantidad)</td>
-                    <td><span class="status-no">0</span></td>
-                    <td>Meta: 50+ en 90 días</td>
-                    <td>~50</td>
-                    <td>~30</td>
-                    <td><strong>1101</strong></td>
-                    <td>~20</td>
-                </tr>
-                <tr>
-                    <td>Horario de atención web</td>
-                    <td><span class="status-no">N/A</span></td>
-                    <td>24/7</td>
-                    <td>24/7</td>
-                    <td>24/7</td>
-                    <td>24/7</td>
-                    <td>24/7</td>
-                </tr>
-                <tr>
-                    <td>Facilidad de pedido desde celular</td>
-                    <td><span class="status-no">Solo WhatsApp</span></td>
-                    <td><span class="status-yes">Total (web + WhatsApp)</span></td>
-                    <td><span class="status-yes">Alta</span></td>
-                    <td><span class="status-yes">Media</span></td>
-                    <td><span class="status-yes">Media</span></td>
-                    <td><span class="status-yes">Media</span></td>
-                </tr>
-            </tbody>
-        </table>
-        
-        <div class="footer">
-            <p>Fuente: Investigación propia basada en sitios web oficiales y Google Maps (junio 2026)</p>
-            <p>* Los competidores tienen presencia web pero falta integración completa de e-commerce y ventajas locales claras</p>
-        </div>
+<main>
+  <header>
+    <div>
+      <span class="tag">Análisis comercial rápido</span>
+      <h1>Cómo puede destacarse Valentino frente a otros repuesteros.</h1>
+      <p>La oportunidad no es competir por “tener todo online”. Es hacer que consultar stock sea más fácil y rápido.</p>
     </div>
+    <p><strong>Valentino Repuestos</strong><br>Fernández Oro · Alto Valle</p>
+  </header>
+
+  <table>
+    <thead>
+      <tr><th>Negocio / referencia</th><th>Qué suele tener</th><th>Qué suele faltar</th><th>Oportunidad para Valentino</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Repuesteras locales tradicionales</td><td>Mostrador, teléfono, WhatsApp, algo de redes.</td><td>Landing clara, catálogo navegable, pedido ordenado.</td><td><span class="yes">Ganar consultas</span> con una página simple que mande al WhatsApp correcto.</td></tr>
+      <tr><td>Competidores con web catálogo</td><td>Muchos productos, categorías, búsqueda.</td><td>Diseño frío, demasiada información, poco foco local.</td><td>Ser más humano: “decinos modelo/año y te ayudamos”.</td></tr>
+      <tr><td>Marketplaces grandes</td><td>Precio, variedad, envíos.</td><td>Asesoramiento, confianza local, retiro inmediato.</td><td><span class="yes">Diferenciarse por atención</span>, compatibilidad y cercanía.</td></tr>
+      <tr class="highlight"><td>Valentino con landing propuesta</td><td>WhatsApp, rubros, búsqueda simple, mapa, Instagram, mensajes armados.</td><td>Se completa con fotos reales y productos frecuentes.</td><td><span class="yes">Queda preparado para convertir visitas en consultas.</span></td></tr>
+    </tbody>
+  </table>
+
+  <section class="cardgrid">
+    <div class="card"><h3>1. Mobile primero</h3><p>La mayoría consulta desde el celular. El primer botón debe ser WhatsApp.</p></div>
+    <div class="card"><h3>2. Rubros claros</h3><p>Baterías, frenos, embragues, lubricantes, rodamientos y filtros visibles sin buscar.</p></div>
+    <div class="card"><h3>3. Pedido más ordenado</h3><p>La página educa: marca, modelo, año, motor y foto si hay.</p></div>
+    <div class="card"><h3>4. Confianza local</h3><p>Dirección, zona, mapa e Instagram reducen dudas antes de escribir.</p></div>
+  </section>
+
+  <footer>Nota: comparativa orientativa para conversación comercial. Validar datos definitivos con el dueño antes de publicar claims específicos.</footer>
+</main>
 </body>
 </html>

@@ -10,15 +10,38 @@
   
   * {
     @apply border-gray-200;
+    box-sizing: border-box;
+    min-width: 0;
+  }
+
+  img, svg, video, canvas {
+    max-width: 100%;
   }
   
   body {
     @apply bg-white text-gray-900 antialiased;
     font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    -webkit-tap-highlight-color: transparent;
+    width: 100%;
+    overflow-x: clip;
   }
   
   html {
     scroll-behavior: smooth;
+    overflow-x: clip;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      scroll-behavior: auto !important;
+      transition-duration: 0.01ms !important;
+    }
   }
 }
 
@@ -40,7 +63,7 @@
   }
   
   .section-container {
-    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+    @apply w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
   
   .section-title {

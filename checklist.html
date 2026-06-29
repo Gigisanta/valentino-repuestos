@@ -1,164 +1,63 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checklist - Valentino Repuestos</title>
-    <style>
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            margin: 0;
-            padding: 20px;
-            background-color: #f9f9f9;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: white;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        .header {
-            text-align: center;
-            border-bottom: 3px solid #C41E3A;
-            padding-bottom: 20px;
-            margin-bottom: 30px;
-        }
-        .header h1 {
-            color: #C41E3A;
-            margin: 0;
-            font-size: 24px;
-        }
-        .checklist-item {
-            display: flex;
-            align-items: flex-start;
-            margin-bottom: 20px;
-        }
-        .checklist-item input[type="checkbox"] {
-            margin-top: 8px;
-            width: 18px;
-            height: 18px;
-            cursor: pointer;
-        }
-        .checklist-item label {
-            margin-left: 12px;
-            font-size: 16px;
-            line-height: 1.5;
-            flex-grow: 1;
-        }
-        .checklist-item label strong {
-            color: #C41E3A;
-        }
-        .section-title {
-            color: #C41E3A;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 8px;
-            margin-top: 30px;
-            margin-bottom: 20px;
-            font-size: 20px;
-        }
-        .footer {
-            text-align: center;
-            margin-top: 30px;
-            padding-top: 20px;
-            border-top: 1px solid #eee;
-            color: #666;
-            font-size: 14px;
-        }
-        @media print {
-            body { background-color: white; }
-            .container { box-shadow: none; }
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Checklist - Valentino Repuestos</title>
+  <style>
+    @page { size:A4; margin:14mm; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Inter, Arial, sans-serif; color:#18181b; background:#f6efe3; line-height:1.45; }
+    main { width:210mm; min-height:297mm; margin:0 auto; background:#fffaf2; padding:16mm; }
+    h1 { margin:0; font-size:34px; letter-spacing:-1px; line-height:1.05; }
+    h2 { margin:24px 0 10px; font-size:20px; color:#c41e3a; }
+    p { color:#52525b; margin:8px 0 0; }
+    header { border-bottom:4px solid #c41e3a; padding-bottom:18px; }
+    .list { display:grid; gap:10px; margin-top:12px; }
+    label { display:flex; gap:12px; align-items:flex-start; background:white; border:1px solid #e7e5e4; border-radius:16px; padding:13px; }
+    input { width:20px; height:20px; margin-top:2px; }
+    strong { display:block; color:#18181b; }
+    span { color:#52525b; }
+    .note { background:#18181b; color:white; border-radius:18px; padding:16px; margin-top:20px; }
+    .note p { color:#e4e4e7; }
+    @media print { body { background:white; } main { margin:0; } }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>CHECKLIST: LO QUE NECESITAMOS DE VOS</h1>
-            <p>Para lanzar tu tienda online en 2 semanas</p>
-        </div>
-        
-        <div class="section-title">📦 Información de Productos</div>
-        <div class="checklist-item">
-            <input type="checkbox" id="product-list">
-            <label for="product-list">Lista de 20-30 productos estrella (código, nombre, precio, stock actual, marca)</label>
-        </div>
-        <div class="checklist-item">
-            <input type="checkbox" id="product-photos">
-            <label for="product-photos">Fotos de los productos (al menos 1 foto clara por producto, puede ser con celular)</label>
-        </div>
-        <div class="checklist-item">
-            <input type="checkbox" id="product-categories">
-            <label for="product-categories">Categorías principales que manejan (ej: Baterías, Frenos, Embragues, Lubricantes, Rodamientos, Filtros)</label>
-        </div>
-        
-        <div class="section-title">🏪 Información del Local</div>
-        <div class="checklist-item">
-            <input type="checkbox" id="local-photos">
-            <label for="local-photos">3-4 fotos del local exterior, mostrador interno, stock y equipo (si hay)</label>
-        </div>
-        <div class="checklist-item">
-            <input type="checkbox" id="local-details">
-            <label for="local-details">Horarios exactos de atención (días y horas)</label>
-        </div>
-        <div class="checklist-item">
-            <input type="checkbox" id="local-map">
-            <label for="local-map">Confirmar dirección exacta (Mariano Moreno 354) y punto de referencia cercano</label>
-        </div>
-        <div class="checklist-item">
-            <input type="checkbox" id="local-contact">
-                <label for="local-contact">Datos de contacto actualizados (teléfonos, WhatsApp, email)</label>
-        </div>
-        
-        <div class="section-title">💳 Configuración de Pagos y Envíos</div>
-        <div class="checklist-item">
-            <input type="checkbox" id="mercadopago">
-            <label for="mercadopago">¿Tenés cuenta de MercadoPago activa o necesitás ayuda para crearla?</label>
-        </div>
-        <div class="checklist-item">
-            <input type="checkbox" id="envio-politica">
-            <label for="envio-politica">Definir política de envío: ¿gratis desde cierto monto? ¿Radio de cobertura (Fernández Oro, Cipolletti, Neuquén)?</label>
-        </div>
-        <div class="checklist-item">
-            <input type="checkbox" id="retiro-tiempo">
-            <label for="retiro-tiempo">Tiempo estimado para retiro en local (ej: listo en 1 hora)</label>
-        </div>
-        
-        <div class="section-title">📊 Configuración de Talleres (B2B)</div>
-        <div class="checklist-item">
-            <input type="checkbox" id="taller-lista">
-            <label for="taller-lista">Lista de 10 talleres clave con quienes trabajás o querés trabajar (nombre, contacto, qué compran)</label>
-        </div>
-        <div class="checklist-item">
-            <input type="checkbox" id="precios-mayorista">
-            <label for="precios-mayorista">Lista de precios especiales para compra al por mayor (desc % por cantidad)</label>
-        </div>
-        <div class="checklist-item">
-            <input type="checkbox" id="cuenta-corriente">
-                <label for="cuenta-corriente">¿Ofrecés cuenta corriente a algunos talleres? Detallar condiciones</label>
-        </div>
-        
-        <div class="section-title">🎨 Marca y Contenido</div>
-        <div class="checklist-item">
-            <input type="checkbox" id="logo-file">
-            <label for="logo-file">Logo en alta resolución (PNG transparente o vector) o indicarnos si querés que lo diseñemos/mejoremos</label>
-        </div>
-        <div class="checklist-item">
-            <input type="checkbox" id="colores-marca">
-                <label for="colores-marca">Colores corporativos específicos (si los tenés además del rojo que usamos)</label>
-        </div>
-        <div class="checklist-item">
-            <input type="checkbox" id="mensaje-whatsapp">
-                <label for="mensaje-whatsapp">Mensaje de bienvenida para WhatsApp business (ej: "¡Hola! Gracias por contactar a Valentino Repuestos...")</label>
-        </div>
-        
-        <div class="footer">
-            <p>Marcá las casillas conforme vayas reuniendo la información. Podemos empezar con lo que tengas y completar después.</p>
-            <p>MaatWork · Giolivo Garcia · 299 471-9426 (WhatsApp)</p>
-        </div>
-    </div>
+<main>
+  <header>
+    <h1>Qué necesitamos de Valentino para dejar la página lista.</h1>
+    <p>Checklist simple para no frenar la publicación ni inventar información.</p>
+  </header>
+
+  <h2>Datos básicos</h2>
+  <div class="list">
+    <label><input type="checkbox"><span><strong>WhatsApp principal</strong>Número que quieren recibir consultas de stock.</span></label>
+    <label><input type="checkbox"><span><strong>Horarios reales</strong>Días y horarios de atención del local.</span></label>
+    <label><input type="checkbox"><span><strong>Dirección confirmada</strong>Mariano Moreno 354 u otra dirección exacta para Maps.</span></label>
+    <label><input type="checkbox"><span><strong>Instagram/Facebook oficiales</strong>Links correctos para poner en la web.</span></label>
+  </div>
+
+  <h2>Catálogo inicial</h2>
+  <div class="list">
+    <label><input type="checkbox"><span><strong>Rubros principales</strong>Baterías, frenos, embragues, lubricantes, rodamientos, filtros u otros.</span></label>
+    <label><input type="checkbox"><span><strong>20 productos frecuentes</strong>Los que más preguntan o más margen tienen.</span></label>
+    <label><input type="checkbox"><span><strong>Marcas que trabajan</strong>Ej: Moura, WIX, SKF, Mobil, Bosch, etc.</span></label>
+    <label><input type="checkbox"><span><strong>Fotos reales</strong>Frente del local, mostrador, góndolas, productos y equipo.</span></label>
+  </div>
+
+  <h2>Forma de atención</h2>
+  <div class="list">
+    <label><input type="checkbox"><span><strong>Retiro / envío</strong>Confirmar si hacen envíos locales o solo retiro.</span></label>
+    <label><input type="checkbox"><span><strong>Pedidos para talleres</strong>Si quieren una vía especial o simplemente WhatsApp con lista.</span></label>
+    <label><input type="checkbox"><span><strong>Pagos</strong>Efectivo, transferencia, tarjeta, mercado pago, etc.</span></label>
+    <label><input type="checkbox"><span><strong>Qué NO prometer</strong>Garantías, envíos, stock o precios que no quieran publicar.</span></label>
+  </div>
+
+  <div class="note">
+    <strong>Regla simple:</strong>
+    <p>Publicamos primero lo mínimo que trae consultas. Después medimos qué pregunta la gente y cargamos más catálogo.</p>
+  </div>
+</main>
 </body>
 </html>
