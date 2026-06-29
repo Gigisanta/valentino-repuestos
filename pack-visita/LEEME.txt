@@ -1,4 +1,54 @@
-Pack listo para Valentino Repuestos
-Demo: https://valentino-repuestos.vercel.app
-Abrir/imprimir los HTML desde esta carpeta.
-INVESTIGACION_SUBAGENTES.md resume los hallazgos de diseño, catálogo, copy, animaciones y competencia.
+Pack de visita — Valentino Repuestos
+
+Demo definitiva:
+https://repuestosvalentino.maat.work
+
+Objetivo:
+Ir el miércoles con una propuesta concreta, documentos para entregar, hojas para escribir durante la reunión y un siguiente paso cerrable si muestran interés.
+
+Archivos principales para imprimir:
+1. 01-propuesta-comercial.html / .pdf
+   Propuesta completa. Usar para explicar problema, solución, entregables y opciones.
+
+2. 02-onepager-cliente.html / .pdf
+   Hoja de una página para dejarle al dueño. Es la más importante para entregar.
+
+3. 03-guion-reunion.html / .pdf
+   Guion interno para Gio. No hace falta entregarlo.
+
+4. 04-hoja-relevamiento.html / .pdf
+   Hoja para escribir durante la reunión: datos, horarios, rubros, productos, decisiones.
+
+5. 05-diagnostico-investigacion.html / .pdf
+   Resumen de investigación y oportunidad. Sirve como respaldo.
+
+6. 06-checklist-fotos-contenido.html / .pdf
+   Checklist para pedir fotos reales, horarios, productos, marcas y promesas comerciales.
+
+7. 07-acuerdo-siguiente-paso.html / .pdf
+   Hoja simple para cerrar próximos pasos si dicen que sí.
+
+8. 08-mensaje-whatsapp-previo.html / .pdf
+   Texto para mandar antes o después de pasar.
+
+Orden recomendado para llevar impreso:
+- 02-onepager-cliente.pdf: 2 copias.
+- 04-hoja-relevamiento.pdf: 2 copias.
+- 06-checklist-fotos-contenido.pdf: 1 copia.
+- 07-acuerdo-siguiente-paso.pdf: 1 copia, solo usar si hay interés real.
+- 01-propuesta-comercial.pdf: 1 copia completa.
+- 03-guion-reunion.pdf: solo para Gio.
+
+Regla comercial:
+No vender una “web”. Vender menos consultas desordenadas, más presencia local, WhatsApp mejor armado y una base para catálogo real.
+
+No prometer:
+- precios publicados,
+- stock real,
+- envíos,
+- horarios,
+- garantías,
+- marcas,
+si Valentino no lo confirma en reunión.
+
+INVESTIGACION_SUBAGENTES.md queda como respaldo extendido de investigación previa.
