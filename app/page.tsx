@@ -215,7 +215,7 @@ export default function HomePage() {
                           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gray-500">Catálogo digital</p>
                           <p className="mt-1 font-display text-2xl font-bold text-valentino-dark">Del mostrador al celular</p>
                         </div>
-                        <span className="rounded-full bg-green-100 px-3 py-1 text-xs font-semibold text-green-800">Propuesta activa</span>
+                        <span className="rounded-full bg-green-100 px-3 py-1 text-xs font-semibold text-green-800">Atención activa</span>
                       </div>
 
                       <div className="mt-5 space-y-3">
@@ -249,12 +249,12 @@ export default function HomePage() {
         <section id="catalogo" className="bg-white py-16 sm:py-24" aria-labelledby="catalogo-title">
           <div className="section-container">
             <div className="mx-auto max-w-2xl text-center">
-              <p className="text-sm font-bold uppercase tracking-[0.22em] text-valentino-red">Catálogo inicial</p>
+              <p className="text-sm font-bold uppercase tracking-[0.22em] text-valentino-red">Catálogo digital</p>
               <h2 id="catalogo-title" className="mt-3 font-display text-4xl font-bold tracking-tight text-valentino-dark sm:text-5xl">
-                Categorías que la gente busca antes de ir al local
+                Categorías frecuentes para consultar antes de pasar por el local
               </h2>
               <p className="mt-5 text-lg leading-8 text-gray-600">
-                La primera versión prioriza lo que más rota: productos fáciles de consultar, pedir y retirar.
+                Organizamos los rubros de mayor rotación para que puedas consultar stock, precio y retiro sin perder tiempo.
               </p>
             </div>
 
@@ -348,14 +348,14 @@ export default function HomePage() {
 
                 <div className="border-t border-white/10 bg-[#111827] p-8 sm:p-10 lg:border-l lg:border-t-0">
                   <div className="rounded-3xl bg-white p-6 text-gray-900">
-                    <p className="text-sm font-bold uppercase tracking-[0.18em] text-valentino-red">Próximo paso</p>
-                    <h3 className="mt-3 font-display text-3xl font-bold text-valentino-dark">Lanzar con 20 productos estrella</h3>
+                    <p className="text-sm font-bold uppercase tracking-[0.18em] text-valentino-red">Consulta más rápida</p>
+                    <h3 className="mt-3 font-display text-3xl font-bold text-valentino-dark">Datos que ayudan a cotizar mejor</h3>
                     <ul className="mt-6 space-y-4 text-gray-700">
                       {[
-                        'Fotos reales del local y mostrador.',
-                        '20 productos con código, precio y stock.',
-                        'WhatsApp Business con respuestas rápidas.',
-                        'Lista inicial de talleres frecuentes.',
+                        'Marca, modelo, año y versión del vehículo.',
+                        'Foto o código del repuesto si lo tenés.',
+                        'Cantidad necesaria y urgencia del pedido.',
+                        'Si retirás en local o necesitás coordinación local.',
                       ].map((item) => (
                         <li key={item} className="flex gap-3">
                           <Icons.Check className="mt-0.5 h-5 w-5 shrink-0 text-valentino-red" />
