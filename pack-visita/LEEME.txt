@@ -37,12 +37,16 @@ Archivos principales para imprimir:
 10. 10-mercado-competencia.html / .pdf
    Contexto regional, competencia local/Cipolletti, oportunidad y riesgos. Uso interno Gio.
 
+11. 11-plan-cero-costo.html / .pdf
+   Plan táctico de bajo costo: WhatsApp Business, catálogo nativo, Google Business Profile, fotos y QR.
+
 Orden recomendado para llevar impreso:
 - 02-onepager-cliente.pdf: 2 copias.
 - 04-hoja-relevamiento.pdf: 2 copias.
 - 06-checklist-fotos-contenido.pdf: 1 copia.
 - 07-acuerdo-siguiente-paso.pdf: 1 copia, solo usar si hay interés real.
 - 01-propuesta-comercial.pdf: 1 copia completa.
+- 11-plan-cero-costo.pdf: 1 copia si querés mostrar que se puede empezar simple y barato.
 - 03-guion-reunion.pdf: solo para Gio.
 - 09-fuentes-y-preguntas.pdf y 10-mercado-competencia.pdf: respaldo interno si preguntan de dónde sale la oportunidad.
 
