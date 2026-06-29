@@ -34,6 +34,9 @@ Archivos principales para imprimir:
 9. 09-fuentes-y-preguntas.html / .pdf
    Fuentes públicas consultadas y preguntas críticas para no mezclar datos. Uso interno Gio.
 
+10. 10-mercado-competencia.html / .pdf
+   Contexto regional, competencia local/Cipolletti, oportunidad y riesgos. Uso interno Gio.
+
 Orden recomendado para llevar impreso:
 - 02-onepager-cliente.pdf: 2 copias.
 - 04-hoja-relevamiento.pdf: 2 copias.
@@ -41,6 +44,7 @@ Orden recomendado para llevar impreso:
 - 07-acuerdo-siguiente-paso.pdf: 1 copia, solo usar si hay interés real.
 - 01-propuesta-comercial.pdf: 1 copia completa.
 - 03-guion-reunion.pdf: solo para Gio.
+- 09-fuentes-y-preguntas.pdf y 10-mercado-competencia.pdf: respaldo interno si preguntan de dónde sale la oportunidad.
 
 Regla comercial:
 No vender una “web”. Vender menos consultas desordenadas, más presencia local, WhatsApp mejor armado y una base para catálogo real.
